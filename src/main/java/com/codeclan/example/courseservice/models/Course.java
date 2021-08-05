@@ -34,6 +34,10 @@ public class Course {
         this.bookings = new ArrayList<>();
     }
 
+    public Course() {
+
+    }
+
     public Long getId() {
         return id;
     }

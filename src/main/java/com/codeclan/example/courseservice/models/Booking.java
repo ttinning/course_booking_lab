@@ -30,6 +30,12 @@ public class Booking {
         this.date = date;
         this.customer = customer;
         this.course = course;
+        this.customer.addBooking(this);
+        this.course.addBooking(this);
+    }
+
+    public Booking() {
+
     }
 
     public Course getCourse() {
