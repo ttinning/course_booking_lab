@@ -37,6 +37,7 @@ class CoursebookingserviceApplicationTests {
 		bookingRepository.save(booking);
 		customer.addBooking(booking);
 		assertEquals(1, customer.getBookings().size());
+		assertEquals("Aly", customerRepository.getById(1L).getName());
 	}
 
 }
